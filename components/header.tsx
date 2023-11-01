@@ -1,5 +1,6 @@
 'use client';
 
+import { Facebook, Instagram, GitHub, LightMode, DarkModeOutlined } from '@mui/icons-material';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -36,10 +37,36 @@ export default function Header({}: HeaderProps) {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="contained" className="bg-slate-800 text-white  hover:bg-gray-900">
+              <Button
+                variant="contained"
+                className="mr-2 bg-slate-800  text-white hover:bg-gray-900"
+              >
                 Contact Us
               </Button>
             </Link>
+            <div className="flex items-center gap-2">
+              <Link
+                href="https://www.facebook.com/MoneythinkatUSC/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Facebook fontSize="medium" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/uscmoneythink/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Instagram fontSize="medium" />
+              </Link>
+              <Link
+                href="https://github.com/quyencodes/moneythink-usc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHub fontSize="medium" />
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
