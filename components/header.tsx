@@ -15,21 +15,31 @@ export default function Header({}: HeaderProps) {
           </Link>
 
           <div className="flex gap-4">
-            <Button variant="ghost" className="text-black hover:bg-black/10">
-              Home
-            </Button>
-            <Button variant="ghost" className="text-black hover:bg-black/10">
-              About
-            </Button>
-            <Button variant="ghost" className="text-black hover:bg-black/10">
-              Team
-            </Button>
-            <Button variant="ghost" className="text-black hover:bg-black/10">
-              Recruitment
-            </Button>
-            <Button variant="contained" className="bg-black text-white  hover:bg-gray-900">
-              Contact Us
-            </Button>
+            <Link href="/">
+              <Button variant="ghost" className="text-black hover:bg-black/10">
+                Home
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button variant="ghost" className="text-black hover:bg-black/10">
+                About
+              </Button>
+            </Link>
+            <Link href="/team">
+              <Button variant="ghost" className="text-black hover:bg-black/10">
+                Team
+              </Button>
+            </Link>
+            <Link href="/recruitment">
+              <Button variant="ghost" className="text-black hover:bg-black/10">
+                Recruitment
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="contained" className="bg-black text-white  hover:bg-gray-900">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </nav>
