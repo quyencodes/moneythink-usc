@@ -36,7 +36,7 @@ export default function Header({}: HeaderProps) {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="contained" className="bg-black text-white  hover:bg-gray-900">
+              <Button variant="contained" className="bg-slate-800 text-white  hover:bg-gray-900">
                 Contact Us
               </Button>
             </Link>
